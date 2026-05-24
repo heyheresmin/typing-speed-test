@@ -8,7 +8,7 @@ function Header() {
         <img src={logoSmall} alt="" />
       </a>
 
-      <div className="flex gap-2">
+      <div className="flex gap-2" aria-label="Personal best score">
         <img src={newPb} alt="" />
 
         <p className="text-neutral-400">

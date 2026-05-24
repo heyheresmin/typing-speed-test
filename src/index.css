@@ -44,3 +44,15 @@
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
 }
+
+@layer base {
+  html {
+    font-size: 16px;
+  }
+
+  body {
+    background-color: var(--color-neutral-900);
+    color: var(--color-neutral);
+    font-family: var(--font-sora);
+  }
+}
