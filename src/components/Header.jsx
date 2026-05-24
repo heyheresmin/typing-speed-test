@@ -3,7 +3,7 @@ import newPb from "../assets/images/icon-personal-best.svg";
 
 function Header() {
   return (
-    <header className="flex items-center justify-between px-4 py-3">
+    <header className="flex items-center justify-between py-3">
       <a href="/">
         <img src={logoSmall} alt="" />
       </a>

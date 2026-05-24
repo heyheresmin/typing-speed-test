@@ -2,23 +2,23 @@ import ChevronIcon from "./ChevronIcon";
 
 function SettingsBar() {
   return (
-    <nav className="flex gap-4 justify-around mt-4">
+    <nav className="flex justify-center gap-6 m-4 pb-4 border-b border-b-neutral-400">
       {/* Difficulty */}
       <fieldset>
-        <legend className="sr-only">Difficutlty</legend>
+        <legend className="sr-only">Difficulty</legend>
 
         {/* Mobile */}
-        <button className="border rounded-md px-12 py-0.5 flex gap-2 cursor-pointer">Hard <ChevronIcon /></button>
+        <button type="button" className="border rounded-md px-12 py-0.5 flex gap-2 cursor-pointer">Hard <ChevronIcon /></button>
 
         {/* Dropdown menu in mobile and shows in desktop too */}
         <div className="hidden">
-          <input type="radio" id="easy" name="difficutlty" value="easy" />
+          <input type="radio" id="easy" name="difficulty" value="easy" />
           <label htmlFor="easy">Easy</label>
 
-          <input type="radio" id="medium" name="difficutlty" value="medium" />
+          <input type="radio" id="medium" name="difficulty" value="medium" />
           <label htmlFor="medium">Medium</label>
 
-          <input type="radio" id="hard" name="difficutlty" value="hard" />
+          <input type="radio" id="hard" name="difficulty" value="hard" />
           <label htmlFor="hard">Hard</label>
         </div>
       </fieldset>
@@ -28,7 +28,7 @@ function SettingsBar() {
         <legend className="sr-only">Mode</legend>
 
         {/* Mobile */}
-        <button className="border rounded-md px-12 py-0.5 flex gap-2 cursor-pointer">Times (60s) <ChevronIcon /></button>
+        <button type="button" className="border rounded-md px-12 py-0.5 flex gap-2 cursor-pointer">Timed (60s) <ChevronIcon /></button>
 
         {/* Dropdown menu in mobile and shows in desktop too */}
         <div className="hidden">
